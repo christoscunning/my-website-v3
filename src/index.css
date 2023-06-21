@@ -1,0 +1,412 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 8em;
+	min-height: 100%;
+	/*min-height: 50em;*/
+
+	background-color: #e6e6e6;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.center-div {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+#error-page {
+	top: 30%;
+	transform: translate(-50%, -50%);
+}
+
+/* content body stuff */
+#body {
+	padding-top: 5em;
+	padding-bottom: 5em;
+
+	margin: 0 auto;
+	overflow: hidden;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+
+	display: block;
+}
+
+#body::after {
+	content: "";
+	background: url(./curcuits-background.jpg);
+	background-repeat: repeat;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+/*Jumbotron stuff*/
+.jumbotron {
+	/* background-image: url("/images/jumbotron-home.jpg"); */
+	background-image: url(./jumbotron-home.jpg);
+	background-repeat: no-repeat;
+	background-position: 75%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 300px;
+	margin: 0px !important;
+}
+
+.jumbotron-text {
+	color: white !important;
+	text-align: center;
+	margin: 0;
+}
+
+.jumbotron .container {
+	position: relative;
+}
+
+#jumbo-title-backdrop {
+	background-color: rgba(89, 89, 89, 0.8);
+	border-radius: 1em;
+	padding: 1em;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+/*test \/*/
+#body>.container {
+	text-align: center;
+	padding-top: 1em;
+}
+
+/* footer stuff */
+#footer {
+	height: 4em;
+	background-color: #666666;
+	position: absolute;
+	bottom: 0;
+	display: table;
+	width: 100%;
+
+}
+
+#footer>.row {
+	height: 100%;
+	display: table-row;
+}
+
+#footer>.row>div {
+	display: table-cell;
+	float: none;
+}
+
+.footertext {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	/*transform: translate(0, -50%);
+	transform: translate(-50%,0);
+	combine transforms*/
+	transform: translate(-50%, -50%);
+	left: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.footercirclelink {
+	/*should make it a perfect circle*/
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	margin: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	background-color: white;
+}
+
+/* Navbar stuff */
+#cnavbar {
+	background-color: #666666;
+
+	display: flex;
+}
+
+#cnavbar>div {
+	/*pointless putting background color here too*/
+	cursor: pointer;
+	text-align: center;
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+#nactive {
+	color: #a3c6cf;
+}
+
+.navbar-link {
+	color: white;
+	font-weight: bold;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+
+/* Home / Welcome page styling  */
+#portrait {
+	height: 25em;
+	width: 25em;
+	margin: 1em;
+	border: 8px;
+	border-style: double;
+	border-radius: 50%;
+}
+
+#intro-text {
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	font-size: 1.5em;
+
+
+}
+
+#intro-div {
+	transform: translate(0, 25%);
+}
+
+#wide-content {
+	width: 75%;
+}
+
+#no-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	cursor: text;
+}
+
+/* About page styling */
+.about-text {
+	margin: 5px;
+	padding: 5px;
+	border: 3px solid grey;
+	border-radius: 3px;
+	background-color: white;
+}
+
+/* Resume page / word page styling */
+
+/* Font Definitions */
+@font-face {
+	font-family: Wingdings;
+	src: local("Wingdings");
+	panose-1: 5 0 0 0 0 0 0 0 0 0;
+}
+
+@font-face {
+	font-family: "Cambria Math";
+	src: local("Cambria Math");
+	panose-1: 2 4 5 3 5 4 6 3 2 4;
+}
+
+@font-face {
+	font-family: Calibri;
+	src: local("Calibri");
+	panose-1: 2 15 5 2 2 2 4 3 2 4;
+}
+
+@font-face {
+	font-family: "Segoe UI";
+	src: local("Segoe UI");
+	panose-1: 2 11 5 2 4 2 4 2 2 3;
+}
+
+/* Style Definitions */
+p.MsoNormal,
+li.MsoNormal,
+div.MsoNormal {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 8.0pt;
+	margin-left: 0cm;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+p.MsoListParagraph,
+li.MsoListParagraph,
+div.MsoListParagraph {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 8.0pt;
+	margin-left: 36.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+p.MsoListParagraphCxSpFirst,
+li.MsoListParagraphCxSpFirst,
+div.MsoListParagraphCxSpFirst {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 0cm;
+	margin-left: 36.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+p.MsoListParagraphCxSpMiddle,
+li.MsoListParagraphCxSpMiddle,
+div.MsoListParagraphCxSpMiddle {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 0cm;
+	margin-left: 36.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+p.MsoListParagraphCxSpLast,
+li.MsoListParagraphCxSpLast,
+div.MsoListParagraphCxSpLast {
+	margin-top: 0cm;
+	margin-right: 0cm;
+	margin-bottom: 8.0pt;
+	margin-left: 36.0pt;
+	line-height: 107%;
+	font-size: 11.0pt;
+	font-family: "Calibri", sans-serif;
+}
+
+.MsoChpDefault {
+	font-family: "Calibri", sans-serif;
+}
+
+.MsoPapDefault {
+	margin-bottom: 8.0pt;
+	line-height: 107%;
+}
+
+/* Page Definitions */
+@page WordSection1 {
+	size: 612.0pt 792.0pt;
+	margin: 36.0pt 36.0pt 36.0pt 36.0pt;
+}
+
+div.WordSection1 {
+	page: WordSection1;
+}
+
+/* List Definitions */
+ol {
+	margin-bottom: 0cm;
+}
+
+ul {
+	margin-bottom: 0cm;
+}
+
+
+/*
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+*/
