@@ -3,10 +3,10 @@
 export default function HomePage() {
     return (
         <>
-            <div className="container" id="wide-content">
+            <div className="container" id="home-page">
                 <div className="row">
-                    <div className="col-sm-0" />
-                    <div className="col-sm-12">
+                    <div className="col-sm-1" />
+                    <div className="col-sm-10">
                     <div className="row" style={{ position: "relative", height: "100%" }}>
                         <div className="col-sm-6">
                         <img src="./me-oldfbpp.jpg" id="portrait" />
@@ -19,7 +19,7 @@ export default function HomePage() {
                             developer in my spare time. I also enjoy playing hockey, ultimate
                             and{" "}
                             <a
-                                id="no-link"
+                                className="hidden-link"
                                 href="https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/"
                             >
                                 video games
@@ -34,7 +34,7 @@ export default function HomePage() {
                         </div>
                     </div>
                     </div>
-                    <div className="col-sm-0" />
+                    <div className="col-sm-1" />
                 </div>
             </div>
         </>

@@ -1,3 +1,13 @@
+/*
+	Global styling
+*/
+
+html, body, #root {
+	min-height: 100vh;
+}
+
+
+
 html {
 	height: 100%;
 	box-sizing: border-box;
@@ -9,14 +19,32 @@ html {
 	box-sizing: inherit;
 }
 
+#root {
+	background: url(./curcuits-background.jpg);
+}
+
+#site-background {
+	margin-right: 0;
+	margin-left: 0;
+	width: 100%;
+	height: 100%;
+	/* background-color: #666666; */
+}
+
+#content-col {
+	min-height: 100vh;
+	background-color: #EDEDE5;
+	padding: 0;
+}
+
 body {
 	position: relative;
 	margin: 0;
-	padding-bottom: 8em;
+	/* padding-bottom: 8em; */
 	min-height: 100%;
 	/*min-height: 50em;*/
 
-	background-color: #e6e6e6;
+	/* background-color: #e6e6e6; */
 }
 
 .center-text {
@@ -39,26 +67,29 @@ body {
 	padding-top: 5em;
 	padding-bottom: 5em;
 
-	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5em;
+
 	overflow: hidden;
-	height: auto !important;
-	height: 100%;
-	min-height: 100%;
+	height: auto;
 
 	display: block;
+
+	/* background: url(./curcuits-background.jpg); */
+	background-color: #EDEDE5;
+	/* background-color: #a7a8a3; */
+	/* background-color: white; */
 }
 
-#body::after {
-	content: "";
-	background: url(./curcuits-background.jpg);
-	background-repeat: repeat;
-	opacity: 0.5;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
+/*
+	Class to hide links, basically just show them as regular text.
+*/
+.hidden-link:link, .hidden-link:visited, .hidden-link:hover, .hidden-link:active {
+	color: inherit;
+	cursor: text;
+	text-decoration: none;
+	font-weight: inherit;
 }
 
 /*Jumbotron stuff*/
@@ -69,7 +100,7 @@ body {
 	background-position: 75%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	height: 300px;
+	/* height: 300px; */
 	margin: 0px !important;
 }
 
@@ -107,7 +138,7 @@ body {
 	bottom: 0;
 	display: table;
 	width: 100%;
-
+	padding: 0;
 }
 
 #footer>.row {
@@ -118,6 +149,7 @@ body {
 #footer>.row>div {
 	display: table-cell;
 	float: none;
+	padding: 0;
 }
 
 .footertext {
@@ -150,6 +182,8 @@ body {
 	background-color: #666666;
 
 	display: flex;
+
+	margin: 0;
 }
 
 #cnavbar>div {
@@ -176,7 +210,12 @@ body {
 
 
 /* Home / Welcome page styling  */
-#portrait {
+
+/* #home-page {
+	width: 75%;
+} */
+
+#home-page #portrait {
 	height: 25em;
 	width: 25em;
 	margin: 1em;
@@ -185,33 +224,21 @@ body {
 	border-radius: 50%;
 }
 
-#intro-text {
+#home-page #intro-text {
 	font-weight: bold;
 	width: 100%;
 	text-align: left;
 	font-size: 1.5em;
-
-
 }
 
-#intro-div {
+#home-page #intro-div {
 	transform: translate(0, 25%);
 }
 
-#wide-content {
-	width: 75%;
-}
-
-#no-link {
-	color: inherit;
-	text-decoration: none;
-}
-
-p {
-	cursor: text;
-}
-
-/* About page styling */
+/* 
+	About page and Resume text styling 
+	Grey border with white background/.
+*/
 .about-text {
 	margin: 5px;
 	padding: 5px;
@@ -219,6 +246,113 @@ p {
 	border-radius: 3px;
 	background-color: white;
 }
+
+
+/*
+	Quarto Styling
+*/
+
+.board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.status {
+	margin-bottom: 10px;
+}
+
+.square {
+	background: #ffff;
+	border: 1px solid #999;
+	float: left;
+	
+	color: #2345ab;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 34px;
+	
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	height: 34px;
+	width: 34px;
+}
+
+.square:focus {
+	outline: none;
+}
+
+.kbd-navigation .square:focus {
+	background: #ddd;
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.game-info {
+	margin-left: 20px;
+}
+
+div.row-break {
+	flex-basis: 100%;
+	height: 0;
+}
+
+.quartoSquare128 {
+	background: #ffff;
+	border: 1px solid #999;
+	float: left;
+	
+	color: #2345ab;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 34px;
+	
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	height: 128px;
+	width: 128px;
+
+	position: relative;
+}
+
+img.quartoPiece100 {
+	height: 100px;
+	width: 100px;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.unplayed-pieces {
+	width: auto;
+	text-align: center;
+
+	border: 1px solid #999;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.unplayed-piece-square {
+	height: 100px;
+	width: 100px;
+
+	margin: 5px;
+
+	float: left;
+	position: relative;
+}
+
 
 /* Resume page / word page styling */
 
@@ -319,11 +453,11 @@ div.MsoListParagraphCxSpLast {
 
 /* Page Definitions - Margins */
 
-div.WordSection1 {
-	/* note a big fan of this formatting */
-	/* size: 612.0pt 792.0pt;
-	margin: 36.0pt 36.0pt 36.0pt 36.0pt; */
-}
+/* note a big fan of this formatting */
+/* div.WordSection1 {
+	size: 612.0pt 792.0pt;
+	margin: 36.0pt 36.0pt 36.0pt 36.0pt;
+} */
 
 /* List Definitions */
 ol {

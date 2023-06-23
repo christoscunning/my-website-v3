@@ -7,15 +7,20 @@ import { Outlet, Link } from "react-router-dom";
 export default function Root() {
     return (
         <>
+        <div className="container" id="site-background">
+        <div className="row">
+        <div className="col-sm-2"></div>
+        <div className="col-sm-8" id="content-col">
+
             <div id="header">
                 <div className="jumbotron">
                     <div className="container">
-                        <div id="jumbo-title-backdrop">
+                        {/* <div id="jumbo-title-backdrop">
                             <h1 className="jumbotron-text">Christos Cunning</h1>
                             <p className="jumbotron-text">
-                                {/* This website is about me and my interests */}
+                                This website is about me and my interests
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="row row-eq-height" id="cnavbar">
@@ -94,6 +99,11 @@ export default function Root() {
                 </div>
             </footer>
 
+        </div>
+        
+        <div className="col-sm-2"></div>
+        </div>
+        </div>
         </>
     );
 }
