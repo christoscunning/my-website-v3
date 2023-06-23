@@ -8,14 +8,14 @@ export default function HomePage() {
                 {/* <div className="row">
                     <div className="col-sm-1" />
                     <div className="col-sm-10"> */}
-                        <div className="row" style={{ display: "flex"}}>
+                        <div className="row" style={{ display: "flex", margin: "0"}}>
                             <div className="col-sm-6" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                                 <img src="./me-oldfbpp.jpg" id="portrait" />
                             </div>
                             <div className="col-sm-6" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                                 <div id="intro-div">
                                     <p id="intro-text">
-                                    Hi, I'm Christos Cunning, a student currently studying Computer
+                                    Hi, I'm Christos Cunning, a recent graduate Computer
                                     Engineering at McGill University and a passionate software
                                     developer in my spare time. I also enjoy playing hockey, ultimate
                                     and{" "}

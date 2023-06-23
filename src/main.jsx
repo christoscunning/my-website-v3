@@ -12,7 +12,7 @@ import HomePage from './routes/HomePage'
 import AboutMe from './routes/AboutMe'
 import Resume from './routes/Resume'
 import Projects from './routes/Projects'
-import QuartoGame from './routes/Quarto'
+import Quarto from './routes/Quarto'
 
 // Router object
 const router = createBrowserRouter([
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "quarto",
-        element: <QuartoGame />,
+        element: <Quarto />,
       },
     ],
   },
