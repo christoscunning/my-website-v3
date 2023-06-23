@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export default function Projects() {
     return (
@@ -24,6 +24,10 @@ export default function Projects() {
                     <br />
                     <br />
                     <br />
+
+                    <h5>Play Quarto!</h5>
+                    <Link to={'/quarto'}>Link</Link>
+
                     </div>
                     <div className="col-sm-3" />
                 </div>

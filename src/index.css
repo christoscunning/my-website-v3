@@ -11,6 +11,8 @@ html, body, #root {
 html {
 	height: 100%;
 	box-sizing: border-box;
+	/* Stop scroll bar appearing from shifting the rest of the page. */
+	overflow-y: scroll;
 }
 
 *,
@@ -201,8 +203,25 @@ body {
 	color: #a3c6cf;
 }
 
-.navbar-link {
+.navbar-link:link, .navbar-link:visited {
+	text-decoration: none;
 	color: white;
+	font-weight: bold;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.navbar-link:hover, .navbar-link:active {
+	text-decoration: none;
+	color:rgba(17, 10, 36, 0.8);
+	font-weight: bold;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.navbar-link-active:link, .navbar-link-active:visited, .navbar-link-active:hover, .navbar-link-active:active {	
+	text-decoration: none;
+	color:rgba(17, 10, 36, 0.8);
 	font-weight: bold;
 	margin-top: auto;
 	margin-bottom: auto;

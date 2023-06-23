@@ -2,7 +2,7 @@
     Rest of the routes will render inside of this 'root' route.
     This will be the global layout for the app.
 */
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 export default function Root() {
     return (
@@ -29,19 +29,19 @@ export default function Root() {
                     </div>
                     <div className="col-sm-2" id="page1">
                         {/* <h4 id="page1text">Home</h4> */}
-                        <Link to={'/'} className="navbar-link">Home</Link>
+                        <NavLink to={'/'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Home</NavLink>
                     </div>
                     <div className="col-sm-2" id="page3">
                         {/* <h4 id="page3text">About Me</h4> */}
-                        <Link to={'aboutme'} className="navbar-link">About Me</Link>
+                        <NavLink to={'aboutme'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>About Me</NavLink>
                     </div>
                     <div className="col-sm-2" id="page2">
                         {/* <h4 id="page2text">Résumé</h4> */}
-                        <Link to={'resume'} className="navbar-link">Resume</Link>
+                        <NavLink to={'resume'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Resume</NavLink>
                     </div>
                     <div className="col-sm-2" id="page4">
                         {/* <h4 id="page4text">Projects</h4> */}
-                        <Link to={'projects'} className="navbar-link">Projects</Link>
+                        <NavLink to={'projects'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Projects</NavLink>
                     </div>
                     <div className="col-sm-2" style={{ borderWidth: "0px!important" }}>
                         <h4>&nbsp;</h4>
