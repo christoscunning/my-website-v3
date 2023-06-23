@@ -3,10 +3,7 @@
 export default function AboutMe() {
     return (
         <>
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-2" />
-                    <div className="col-sm-8">
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center"}}>
                     {/* Content goes here */}
                     <p className="about-text">
                         I am a third year Computer Engineering student currently studying at
@@ -80,9 +77,6 @@ export default function AboutMe() {
                         other interests include video games and role-playing games, especially
                         Civilization and D&amp;D.
                     </p>
-                    </div>
-                    <div className="col-sm-2" />
-                </div>
             </div>
         </>
     );

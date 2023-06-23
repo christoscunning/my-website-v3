@@ -235,8 +235,8 @@ body {
 } */
 
 #home-page #portrait {
-	height: 25em;
-	width: 25em;
+	/* hei	ght: 60%; */
+	width: 60%;
 	margin: 1em;
 	border: 8px;
 	border-style: double;
@@ -250,9 +250,9 @@ body {
 	font-size: 1.5em;
 }
 
-#home-page #intro-div {
+/* #home-page #intro-div {
 	transform: translate(0, 25%);
-}
+} */
 
 /* 
 	About page and Resume text styling 
@@ -264,6 +264,8 @@ body {
 	border: 3px solid grey;
 	border-radius: 3px;
 	background-color: white;
+
+	width: 75%;
 }
 
 
@@ -374,6 +376,11 @@ img.quartoPiece100 {
 
 
 /* Resume page / word page styling */
+
+/* Custom resume styling */
+.resume-float-right {
+	float: right;
+}
 
 /* Font Definitions */
 @font-face {
