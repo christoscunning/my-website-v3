@@ -17,7 +17,7 @@ export default function HomePage() {
                                     <p id="intro-text">
                                     Hi, I'm Christos Cunning, a recent graduate Computer
                                     Engineering at McGill University and a passionate software
-                                    developer in my spare time. I also enjoy playing hockey, ultimate
+                                    developer. I also enjoy playing hockey, ultimate
                                     and{" "}
                                     <a
                                         className="hidden-link"
@@ -29,7 +29,7 @@ export default function HomePage() {
                                     </p>
                                     <p id="contact-title">Contact Me:</p>
                                     <a href="mailto:christos.cunning@mail.mcgill.ca">
-                                    christos.cunning@mail.mcgill.ca
+                                    christoscunn@gmail.com
                                     </a>
                                 </div>
                             </div>
