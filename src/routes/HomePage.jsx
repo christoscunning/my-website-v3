@@ -15,9 +15,9 @@ export default function HomePage() {
                             <div className="col-sm-6" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                                 <div id="intro-div">
                                     <p id="intro-text">
-                                    Hi, I'm Christos Cunning, a recent graduate Computer
-                                    Engineering at McGill University and a passionate software
-                                    developer. I also enjoy playing hockey, ultimate
+                                    Hi, I'm Christos Cunning. I recently graduated from McGill University 
+                                    with a bachelor's in computer engineering, and I am a passionate software
+                                    developer. I also enjoy playing hockey, ultimate,
                                     and{" "}
                                     <a
                                         className="hidden-link"

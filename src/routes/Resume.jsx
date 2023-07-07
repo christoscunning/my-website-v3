@@ -31,11 +31,8 @@ export default function Resume() {
                                     </span>
                                 </b>
                                 <span style={{ fontFamily: '"Segoe UI",sans-serif' }}>
-                                    <br />
-                                    2986 West 10<sup>th</sup> Avenue, Vancouver, BC, V6K
-                                    2K6
                                     <span className="resume-float-right">
-                                        christoscunn@gmail.com, 604-754-8202
+                                        christoscunn@gmail.com
                                     </span>
                                 </span>
                             </p>

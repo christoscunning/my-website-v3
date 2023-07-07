@@ -22,7 +22,7 @@ html {
 }
 
 #root {
-	background: url(./curcuits-background.jpg);
+	background: url(../curcuits-background.jpg);
 }
 
 #site-background {
@@ -97,7 +97,7 @@ body {
 /*Jumbotron stuff*/
 .jumbotron {
 	/* background-image: url("/images/jumbotron-home.jpg"); */
-	background-image: url(./jumbotron-home.jpg);
+	background-image: url(../jumbotron-home.jpg);
 	background-repeat: no-repeat;
 	background-position: 75%;
 	-webkit-background-size: cover;
