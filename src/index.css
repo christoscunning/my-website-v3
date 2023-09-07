@@ -71,7 +71,7 @@ body {
 
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 5em;
+	margin-bottom: 4em;
 
 	overflow: hidden;
 	height: auto;
@@ -79,9 +79,14 @@ body {
 	display: block;
 
 	/* background: url(./curcuits-background.jpg); */
-	background-color: #EDEDE5;
+	background-color: #666666;
+	/* background-color: #EDEDE5; */
 	/* background-color: #a7a8a3; */
 	/* background-color: white; */
+}
+
+#content-col {
+	background-color: #666666;
 }
 
 /*
@@ -244,10 +249,20 @@ body {
 }
 
 #home-page #intro-text {
+	color: white;
+
 	font-weight: bold;
 	width: 100%;
 	text-align: left;
 	font-size: 1.5em;
+}
+
+#intro-div {
+	width: 100%;
+}
+
+#contact-title {
+	color: white;
 }
 
 /* #home-page #intro-div {
@@ -258,7 +273,7 @@ body {
 	About page and Resume text styling 
 	Grey border with white background/.
 */
-.about-text {
+.boxed-text {
 	margin: 5px;
 	padding: 5px;
 	border: 3px solid grey;

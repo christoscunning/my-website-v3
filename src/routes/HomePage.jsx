@@ -9,10 +9,16 @@ export default function HomePage() {
                     <div className="col-sm-1" />
                     <div className="col-sm-10"> */}
                         <div className="row" style={{ display: "flex", margin: "0"}}>
+
+                            {/*
                             <div className="col-sm-6" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                                 <img src="./me-oldfbpp.jpg" id="portrait" />
                             </div>
-                            <div className="col-sm-6" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+
+                            */}
+                            <div className="col-sm-2"></div>
+
+                            <div className="col-sm-8" style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
                                 <div id="intro-div">
                                     <p id="intro-text">
                                     Hi, I'm Christos Cunning. I recently graduated from McGill University 
@@ -27,12 +33,17 @@ export default function HomePage() {
                                     </a>{" "}
                                     in my spare time.
                                     </p>
-                                    <p id="contact-title">Contact Me:</p>
-                                    <a href="mailto:christos.cunning@mail.mcgill.ca">
-                                    christoscunn@gmail.com
-                                    </a>
+                                    
+                                    <div class="">
+                                        <p id="contact-title">Contact Me:</p>
+                                        <a href="mailto:christoscunn@gmail.com">
+                                        christoscunn@gmail.com
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className="col-sm-2"></div>
                         </div>
                     {/* </div>
                     </div>

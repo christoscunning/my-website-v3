@@ -57,7 +57,11 @@ export default function Root() {
                 <div className="row">
                     <div className="col-sm-3">&nbsp;</div>
                     <div className="col-sm-3">
-                        <p className="footertext">Website created by Christos Cunning</p>
+                        <p className="footertext">
+                            Website {" "}
+                            <NavLink to={'testbench'} className="hidden-link">created</NavLink> 
+                            {" "} by Christos Cunning
+                        </p>
                     </div>
                     <div className="col-sm-3">
                         {/* add little external link buttons */}

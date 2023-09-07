@@ -15,13 +15,15 @@ export default function Projects() {
                 <br />
                 <h5>Research Paper:</h5>
                 <h5>Can Cryptocurrencies Make the (Digital) World Go Round?</h5>
-                <a href="crypto-paper-v3.html">Link</a>
+                <a href="./src/assets/crypto-paper-v3.html">Link</a>
                 <br />
                 <br />
                 <br />
 
                 <h5>Play Quarto!</h5>
                 <Link to={'/quarto'}>Link</Link>
+
+                
 
             </div>
         </>

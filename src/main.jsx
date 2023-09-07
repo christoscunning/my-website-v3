@@ -1,11 +1,17 @@
+// Libraries
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-//import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import { Provider } from 'react-redux'
+
+// My files
 import './index.css'
+import store from './app/store'
+
+// Routes
 import Root from './routes/root'
 import ErrorPage from './error-page'
 import HomePage from './routes/HomePage'
@@ -13,6 +19,7 @@ import AboutMe from './routes/AboutMe'
 import Resume from './routes/Resume'
 import Projects from './routes/Projects'
 import Quarto from './routes/Quarto'
+import TestBench from './routes/TestBench'
 
 // Router object
 const router = createBrowserRouter([
@@ -41,13 +48,19 @@ const router = createBrowserRouter([
         path: "quarto",
         element: <Quarto />,
       },
+      {
+        path: "testbench",
+        element: <TestBench />,
+      },
     ],
   },
 ])
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </Provider>
 )

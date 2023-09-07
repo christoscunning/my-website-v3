@@ -5,7 +5,7 @@ export default function AboutMe() {
         <>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 {/* Content goes here */}
-                <p className="about-text">
+                <p className="boxed-text">
                     I recently recieved my bachelors in Computer Engineering from
                     McGill University in Montreal, Quebec, Canada, and I am currently seeking a Summer or
                     Fall 2021 Internship. Some of the highlights from my degree include learning about{" "}
@@ -40,7 +40,7 @@ export default function AboutMe() {
                     excel one must always be ready to try, fail, (hopefully learn
                     something!), and try again. */}
                 </p>
-                <p className="about-text">
+                <p className="boxed-text">
                     Aside from my technical experience, I am a driven, outgoing person, and some 
                     of the best moments from my time at McGill were thanks to getting involved in 
                     groups such as student government.
@@ -56,7 +56,7 @@ export default function AboutMe() {
                     </a>
                     .
                 </p>
-                {/* <p className="about-text">
+                {/* <p className="boxed-text">
                     Opportunities to work with groups such as the EUS are exciting to me
                     because I have experienced the value that the EUS can bring to the lives
                     of its members here at McGill, and I want to be apart of this. I have
@@ -69,7 +69,7 @@ export default function AboutMe() {
                     has taught me that strong communication skills are necessary for
                     effective collaboration.
                 </p> */}
-                {/* <p className="about-text">
+                {/* <p className="boxed-text">
                         My past work experience includes 8 months at Starbucks Coffee Shop over
                         the Summer of 2020 as a Barista. I had the opportunity there to work as
                         part of a large team and to train new members of that team. In past I
@@ -79,7 +79,7 @@ export default function AboutMe() {
                         provide customer service to customers as well as organize and stock the
                         store.
                     </p> */}
-                <p className="about-text">
+                <p className="boxed-text">
                     Outside of work and school, my interests and hobbies range from sports
                     to music to gaming. I am an avid hockey and ultimate frisbee player, and I was
                     captain of the McGill Ultimate Mens B team for the 2021 and 2022 seasons.

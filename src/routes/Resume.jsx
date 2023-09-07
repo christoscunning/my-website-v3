@@ -6,7 +6,7 @@ export default function Resume() {
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "left" }}>
 
                 {/* Content goes here */}
-                <div className="about-text">
+                <div className="boxed-text">
                     <div className="WordSection1">
                         <div
                             style={{
