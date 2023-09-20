@@ -1,5 +1,5 @@
 name: Deploy to Ubuntu Server
-run-name: ${{ github.actor }} is testing out GitHub actions
+run-name: Deploy website updates to Ubuntu server.
 on: [push]
 jobs:
   Deploy-To-Ubuntu-Server:
