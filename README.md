@@ -25,3 +25,8 @@ Automatic Deployment Notes:
 4. Use rsync to transfer files to ubuntu server over ssh. Example: (add -n for dry run)  
     rsync -av -e 'ssh -p 2634' ./rsync-test/ christos@christoscunning.com:~/rsync-test
 5. That is pretty much it... just need to setup ssh key pair for github runner
+
+For future reference: sources used to setup github action properly  
+- https://www.digitalocean.com/community/tutorials/how-to-use-rsync-to-sync-local-and-remote-directories  
+- https://zellwk.com/blog/github-actions-deploy/  
+- https://github.com/marketplace/actions/install-ssh-key  
