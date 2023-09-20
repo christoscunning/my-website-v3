@@ -22,7 +22,7 @@ jobs:
           
       - name: Build website for deployment
         run: |
-          npm run dev
+          npm run build
       - name: List /dist folder to view build output.
         run: |
           ls ${{ github.workspace }}/dist
