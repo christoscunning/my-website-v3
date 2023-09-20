@@ -22,6 +22,6 @@ Automatic Deployment Notes:
 1. Create github action to run on pushes to main
 2. Load repo into runner
 3. Build website using npm run build command
-4. Use rsync to transfer files to ubuntu server over ssh. Example: (add -n for dry run)
+4. Use rsync to transfer files to ubuntu server over ssh. Example: (add -n for dry run)  
     rsync -av -e 'ssh -p 2634' ./rsync-test/ christos@christoscunning.com:~/rsync-test
 5. That is pretty much it... just need to setup ssh key pair for github runner
