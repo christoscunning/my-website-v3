@@ -15,4 +15,26 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Build website for deployment
+        run: |
+          npm run dev
+      - name: List /dist folder to view build output.
+        run: |
+          ls ${{ github.workspace }}/dist
+      
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.UBUNTU_SERVER_SSH_PRIVATE_KEY }}
+          name: id_rsa
+          known_hosts: unnecessary-adding-known-hosts-bellow
+          
+      - name: Adding known hosts for SSH connection
+        run: |
+          ssh-keyscan -H -p ${{ secrets.UBUNTU_SERVER_SSH_PORT }} ${{ secrets.UBUNTU_SERVER_SSH_HOST }} >> ~/.ssh/known_hosts
+          
+      - name: rsync over SSH to add new dist files to ubuntu server
+        run: |
+          rsync -avn -e 'ssh -p ${{ secrets.UBUNTU_SERVER_SSH_PORT }}' ${{ github.workspace }}/dist/ ${{ secrets.UBUNTU_SERVER_SSH_USER }}@${{ secrets.UBUNTU_SERVER_SSH_HOST }}:/var/www/${{ secrets.UBUNTU_SERVER_SSH_HOST }}/html/
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."

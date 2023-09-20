@@ -23,15 +23,7 @@ export default function HomePage() {
                                     <p id="intro-text">
                                     Hi, I'm Christos Cunning. I recently graduated from McGill University 
                                     with a bachelor's in computer engineering, and I am a passionate software
-                                    developer. I also enjoy playing hockey, ultimate,
-                                    and{" "}
-                                    <a
-                                        className="hidden-link"
-                                        href="https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/"
-                                    >
-                                        video games
-                                    </a>{" "}
-                                    in my spare time.
+                                    developer.
                                     </p>
                                     
                                     <div class="">
