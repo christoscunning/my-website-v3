@@ -29,13 +29,16 @@ html {
 	margin-right: 0;
 	margin-left: 0;
 	width: 100%;
+	max-width: 100%;
 	height: 100%;
 	/* background-color: #666666; */
 }
 
 #content-col {
 	min-height: 100vh;
-	background-color: #EDEDE5;
+	background-color: #333333;
+	/* background-color: #666666; */
+	/* background-color: #EDEDE5; */
 	padding: 0;
 }
 
@@ -79,14 +82,12 @@ body {
 	display: block;
 
 	/* background: url(./curcuits-background.jpg); */
-	background-color: #666666;
+
+	/* Set background color in '#content-col' instead*/
+	/* background-color: #666666; */
 	/* background-color: #EDEDE5; */
 	/* background-color: #a7a8a3; */
 	/* background-color: white; */
-}
-
-#content-col {
-	background-color: #666666;
 }
 
 /*
@@ -140,11 +141,17 @@ body {
 /* footer stuff */
 #footer {
 	height: 4em;
-	background-color: #666666;
+
+	
+	border-top: #edede5 2px solid;
+	background-color: #333333;
+	/* background-color: #666666; */
+	
 	position: absolute;
 	bottom: 0;
 	display: table;
 	width: 100%;
+	max-width: 100%;
 	padding: 0;
 }
 
@@ -160,6 +167,9 @@ body {
 }
 
 .footertext {
+	/* modify color to show on new footer background-color */
+	color: white;
+
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -178,17 +188,25 @@ body {
 	width: 2em;
 	height: 2em;
 	margin: 0;
-	position: absolute;
+	/* position: absolute;
 	top: 40%;
-	left: 50%;
+	left: 50%; */
 	background-color: white;
 }
 
 /* Navbar stuff */
 #cnavbar {
-	background-color: #666666;
+
+	background-color: #333333;
+	/* background-color: #EDEDE5; */
+	/* background-color: #666666; */
+
+	border-bottom: #edede5 2px solid;
 
 	display: flex;
+
+	max-width: 100%;
+	padding: 0;
 
 	margin: 0;
 }
@@ -218,7 +236,10 @@ body {
 
 .navbar-link:hover, .navbar-link:active {
 	text-decoration: none;
-	color:rgba(17, 10, 36, 0.8);
+
+	color: rgb(51, 122, 183);
+	/* color:rgba(17, 10, 36, 0.8); */
+
 	font-weight: bold;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -226,7 +247,10 @@ body {
 
 .navbar-link-active:link, .navbar-link-active:visited, .navbar-link-active:hover, .navbar-link-active:active {	
 	text-decoration: none;
-	color:rgba(17, 10, 36, 0.8);
+
+	color: rgb(51, 122, 183);
+	/* color:rgba(17, 10, 36, 0.8); */
+
 	font-weight: bold;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -271,14 +295,18 @@ body {
 
 /* 
 	About page and Resume text styling 
-	Grey border with white background/.
+	NEW: no background, just white text on dark background. And remove border for cleaner look.
+	OLD: Grey border with white background/.
 */
 .boxed-text {
 	margin: 5px;
 	padding: 5px;
-	border: 3px solid grey;
+	/* border: 3px solid grey; */
 	border-radius: 3px;
-	background-color: white;
+	/* background-color: white; */
+	color: white;
+	
+	text-align: justify;
 
 	width: 75%;
 }

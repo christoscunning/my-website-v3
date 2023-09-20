@@ -7,8 +7,9 @@ export default function AboutMe() {
                 {/* Content goes here */}
                 <p className="boxed-text">
                     I recently recieved my bachelors in Computer Engineering from
-                    McGill University in Montreal, Quebec, Canada, and I am currently seeking a Summer or
-                    Fall 2021 Internship. Some of the highlights from my degree include learning about{" "}
+                    McGill University in Montreal, Quebec, Canada, and I am currently seeking a full time
+                    entry-level computer or software engineering position in either Montreal or Vancouver. 
+                    Some of the highlights from my degree include learning about{" "}
                     <a href="https://www.mcgill.ca/study/2023-2024/courses/comp-424">
                         AI
                     </a>
@@ -56,6 +57,7 @@ export default function AboutMe() {
                     </a>
                     .
                 </p>
+
                 {/* <p className="boxed-text">
                     Opportunities to work with groups such as the EUS are exciting to me
                     because I have experienced the value that the EUS can bring to the lives
@@ -69,6 +71,7 @@ export default function AboutMe() {
                     has taught me that strong communication skills are necessary for
                     effective collaboration.
                 </p> */}
+
                 {/* <p className="boxed-text">
                         My past work experience includes 8 months at Starbucks Coffee Shop over
                         the Summer of 2020 as a Barista. I had the opportunity there to work as
@@ -79,13 +82,15 @@ export default function AboutMe() {
                         provide customer service to customers as well as organize and stock the
                         store.
                     </p> */}
+
                 <p className="boxed-text">
                     Outside of work and school, my interests and hobbies range from sports
-                    to music to gaming. I am an avid hockey and ultimate frisbee player, and I was
+                    to music to creating Spotify playlists. I am an avid hockey and ultimate frisbee player, and I was
                     captain of the McGill Ultimate Mens B team for the 2021 and 2022 seasons.
 
                     I enjoy playing the piano and recieved many years of classical training. I also
-                    had opportunity to play keyboard in a band (Red Shift) for a while.
+                    had opportunity to play keyboard in a band (Red Shift) for a while. Currently trying
+                    I am also trying to learn to play the guitar!
 
                     Some of my
                     other interests include video games and role-playing games, especially

@@ -23,29 +23,46 @@ export default function Root() {
                         </div> */}
                     </div>
                 </div>
+                
+                <div className="container" style={{maxWidth: "100%", padding: "0"}}>
+
                 <div className="row row-eq-height" id="cnavbar">
-                    <div className="col-sm-2" style={{ borderWidth: "0px!important" }}>
+                {/* <div className="row"> */}
+                    
+                    <div className="col">
+                    {/* <div className="col-sm" style={{ borderWidth: "0px!important" }}> */}
                         <h4>&nbsp;</h4>
                     </div>
-                    <div className="col-sm-2" id="page1">
+
+                    <div className="col">
+                    {/* <div className="col-sm" id="page1"> */}
                         {/* <h4 id="page1text">Home</h4> */}
                         <NavLink to={'/'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Home</NavLink>
                     </div>
-                    <div className="col-sm-2" id="page3">
-                        {/* <h4 id="page3text">About Me</h4> */}
+
+                    {/* Remove about me from navbar */}
+                    {/* <div className="col-sm" id="page3">
                         <NavLink to={'aboutme'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>About Me</NavLink>
-                    </div>
-                    <div className="col-sm-2" id="page2">
+                    </div> */}
+                    
+                    <div className="col">
+                    {/* <div className="col-sm" id="page2"> */}
                         {/* <h4 id="page2text">Résumé</h4> */}
                         <NavLink to={'resume'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Resume</NavLink>
                     </div>
-                    <div className="col-sm-2" id="page4">
+                    
+                    <div className="col">
+                    {/* <div className="col-sm" id="page4"> */}
                         {/* <h4 id="page4text">Projects</h4> */}
                         <NavLink to={'projects'} className={({isActive}) => isActive ? "navbar-link-active": "navbar-link" }>Projects</NavLink>
                     </div>
-                    <div className="col-sm-2" style={{ borderWidth: "0px!important" }}>
+                    
+                    <div className="col">
+                    {/* <div className="col-sm" style={{ borderWidth: "0px!important" }}> */}
                         <h4>&nbsp;</h4>
                     </div>
+                </div>
+
                 </div>
             </div>
 

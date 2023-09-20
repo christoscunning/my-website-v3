@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Projects() {
     return (
         <>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <div style={{ color: "white",display: "flex", flexDirection: "column", alignItems: "center" }}>
                 {/* Content goes here */}
                 <h3 className="center-text" style={{ marginBottom: "1em" }}>
                     Check out my GitHub at the link below to view some of my projects!
