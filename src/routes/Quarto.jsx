@@ -16,6 +16,8 @@ export default function Quarto () {
         initialUnused[i] = ("Q" + i);
     }
 
+    // Loading state
+    const [isBoardLoading, setBoardLoading] = useState(true);
     // Initialize state with empty board
     const [boardPieces, setBoardPieces] = useState(emptyBoard);
     const [unusedPieces, setUnusedPieces] = useState(initialUnused);
@@ -42,6 +44,59 @@ export default function Quarto () {
     function resetBoard() {
         setBoardPieces(emptyBoard)
         setUnusedPieces(initialUnused)
+        setBoardLoading(false);
+    }
+
+    const getBoard = async () => {
+        try {
+            // setBoardPieces
+            const response = await fetch('http://localhost:8000/quarto/get_board_state/16');
+            const json = await response.json();
+            
+            const newBoard = [];
+            // assume all empty
+            for (let i = 0; i < 16; i++) {
+                emptyBoard[i] = "none";
+            }
+            // add pieces from response
+            console.log(json);
+            const board = json['board']
+            board.forEach(function (boardPiece) {
+                console.log(boardPiece)
+                const boardPos = parseInt(boardPiece['board_position'].substring(1));
+                console.log(boardPos)
+                const pieceType = boardPiece['piece_type'];
+                console.log(pieceType);
+                newBoard[boardPos] = pieceType;
+            });
+            console.log(newBoard);
+            setBoardPieces(newBoard);
+
+            
+            // setUnusedPieces
+            const response2 = await fetch('http://localhost:8000/quarto/get_unused_pieces/16');
+            const json2 = await response2.json();
+            
+            const newUnused = [];
+            console.log(json2);
+            const unused = json2['unused']
+            unused.forEach(function (unusedPiece) {
+                newUnused.push(unusedPiece['piece_type']);
+            });
+            console.log(newUnused);
+            setUnusedPieces(newUnused);
+
+
+        } catch (error) {
+            console.error(error);
+        } finally {
+            setBoardLoading(false);
+        }
+    };
+
+    function loadBoard() {
+        setBoardLoading(true);
+        getBoard();
     }
 
     //movePiece(0, "Q1")
@@ -49,14 +104,24 @@ export default function Quarto () {
 
     return (
         <>
-            <Button onClick={() => resetBoard()}>Reset</Button>
+            <Button onClick={() => resetBoard()}>Reset Game</Button>
             
-            <Board squarePieces={boardPieces} movePiece={movePiece}/>
-            
-            <br />
-            <h4>Unused pieces:</h4>
+            <Button onClick={() => loadBoard()}>Load Game</Button>
 
-            <UnusedPieces squarePieces={unusedPieces} movePiece={movePiece}/>
+            { isBoardLoading ? (
+                <>Board loading...</>
+            ) : (
+                <>
+                    <Board squarePieces={boardPieces} movePiece={movePiece}/>
+                                
+                    <br />
+                    <h4>Unused pieces:</h4>
+
+                    <UnusedPieces squarePieces={unusedPieces} movePiece={movePiece}/>
+                </>
+            )
+                
+            }
         </>
     );
 }
