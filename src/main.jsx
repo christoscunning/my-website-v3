@@ -20,6 +20,7 @@ import Resume from './routes/Resume'
 import Projects from './routes/Projects'
 import Quarto from './routes/Quarto'
 import TestBench from './routes/TestBench'
+import Colors from './routes/Colors'
 
 // Router object
 const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "testbench",
         element: <TestBench />,
+      },
+      {
+        path: "colors",
+        element: <Colors />,
       },
     ],
   },
